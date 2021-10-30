@@ -1,6 +1,14 @@
 ## macOS Monterey?
 
-I've updated to [OpenCore](https://github.com/acidanthera/OpenCorePkg) [0.7.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.0), but unfortunately you still can't install macOS Monterey on **AMD** CPUs yet. I'll update this readme and the `EFI` files when its possible.
+**Status:** not working for Monterey.
+
+I've updated [OpenCore](https://github.com/acidanthera/OpenCorePkg) [0.7.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.4), and attempted to install macOS Monterey 12.0.1 downloaded from the App Store. I used this dortania guide: [macOS 12: Monterey](https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html#table-of-contents).
+
+If the macOS update fails, 2 `Macintosh HD`'s would show up in the boot menu. Just go into system preferences, "startup disk" and select the Macintosh HD disk, and restart it.
+
+![Two launches](./images/two_launch.jpg)
+
+This setup uses DEBUG files, instead of RELEASE. Hopefully this helps me (and you) debug why things aren't working well, but at the cost of some unmeasured (startup?) performance reduction.
 
 ## How I generated the files
 
